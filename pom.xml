@@ -117,9 +117,9 @@
 
     <!--添加jdbc依赖-->
     <dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>ojdbc14</artifactId>
-      <version>10.2.0.1.0</version>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc8</artifactId>
+      <version>23.7.0.25.01</version>
     </dependency>
 
     <!-- 导入dbcp的jar包，用来在applicationContext.xml中配置数据库 -->
