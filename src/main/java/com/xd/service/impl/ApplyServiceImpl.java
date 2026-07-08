@@ -12,12 +12,13 @@ import java.util.List;
 public class ApplyServiceImpl implements ApplyService {
     @Autowired
     private ApplyDao applyDao;
+
     public Boolean addApply(Integer bid, Integer cid, Integer tid, Integer account) {
-        return applyDao.addApply(bid,cid,tid,account);
+        return applyDao.addApply(bid, cid, tid, account);
     }
 
     public List<Apply> searchApply(List<Integer> bids, List<Integer> tids) {
-        return applyDao.searchApply(bids,tids);
+        return applyDao.searchApply(bids, tids);
     }
 
     public Integer rejectApply(Integer id) {
